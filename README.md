@@ -1,4 +1,4 @@
-# JavaFX Media Player (BIIM3210 - Assignment 2)
+# JavaFX Media Player
 
 A media player with a video view, playlist, and keyboard controls.
 
