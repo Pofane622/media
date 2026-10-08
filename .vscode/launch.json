@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Media Player",
+            "request": "launch",
+            "mainClass": "com.mediaplayer.Launcher",
+            "projectName": "media-player"
+        }
+    ]
+}

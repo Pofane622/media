@@ -1,0 +1,115 @@
+.root {
+    -bg: #0f1115;
+    -panel: #171a21;
+    -panel-2: #1e222b;
+    -line: #2a2f3a;
+    -text: #e8eaed;
+    -muted: #8b93a1;
+    -accent: #ff7a3d;
+    -accent-dark: #e0612a;
+
+    -fx-background-color: -bg;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 13px;
+    -fx-text-fill: -text;
+}
+
+.label { -fx-text-fill: -text; }
+
+/* ---------- top bar ---------- */
+.top-bar {
+    -fx-background-color: -panel;
+    -fx-padding: 12 18;
+    -fx-border-color: transparent transparent -line transparent;
+}
+.app-title { -fx-font-size: 16px; -fx-font-weight: bold; }
+.now-playing-label { -fx-font-size: 13px; -fx-text-fill: -muted; }
+.status-pill {
+    -fx-background-color: -panel-2;
+    -fx-background-radius: 20;
+    -fx-padding: 3 12;
+    -fx-text-fill: -accent;
+    -fx-font-weight: bold;
+    -fx-font-size: 11px;
+}
+
+/* ---------- video area ---------- */
+.video-pane { -fx-background-color: #000000; }
+.placeholder-label {
+    -fx-text-fill: -muted;
+    -fx-font-size: 16px;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+/* ---------- playlist ---------- */
+.side-panel {
+    -fx-background-color: -panel;
+    -fx-padding: 14;
+    -fx-border-color: transparent transparent transparent -line;
+}
+.section-title { -fx-font-size: 12px; -fx-font-weight: bold; -fx-text-fill: -muted; }
+
+.list-view {
+    -fx-background-color: -panel-2;
+    -fx-background-radius: 8;
+    -fx-border-color: -line;
+    -fx-border-radius: 8;
+    -fx-padding: 4;
+}
+.list-view .placeholder .label { -fx-text-fill: -muted; -fx-text-alignment: center; }
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: -text;
+    -fx-padding: 8 10;
+    -fx-background-radius: 6;
+}
+.list-cell:filled:hover { -fx-background-color: #272c37; }
+.list-cell:filled:selected { -fx-background-color: #2f3542; -fx-text-fill: white; }
+.list-cell.now-playing { -fx-text-fill: -accent; -fx-font-weight: bold; }
+
+/* ---------- controls ---------- */
+.controls {
+    -fx-background-color: -panel;
+    -fx-padding: 12 18 10 18;
+    -fx-border-color: -line transparent transparent transparent;
+}
+
+.button {
+    -fx-background-color: -panel-2;
+    -fx-text-fill: -text;
+    -fx-background-radius: 8;
+    -fx-border-color: -line;
+    -fx-border-radius: 8;
+    -fx-padding: 7 16;
+    -fx-cursor: hand;
+}
+.button:hover { -fx-background-color: #2a2f3a; }
+.button:pressed { -fx-background-color: #232833; }
+
+.button.primary {
+    -fx-background-color: -accent;
+    -fx-border-color: -accent;
+    -fx-text-fill: #1a0d05;
+    -fx-font-weight: bold;
+}
+.button.primary:hover { -fx-background-color: -accent-dark; }
+
+.button.danger:hover { -fx-background-color: #4a2227; -fx-border-color: #b8444f; }
+
+.slider .track {
+    -fx-background-color: #2a2f3a;
+    -fx-background-insets: 0;
+    -fx-background-radius: 4;
+    -fx-padding: 3;
+}
+.slider .thumb {
+    -fx-background-color: -accent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 10;
+    -fx-padding: 7;
+}
+.slider:hover .thumb { -fx-background-color: white; }
+
+.time-label { -fx-text-fill: -muted; -fx-font-family: "Consolas", "Menlo", monospace; -fx-font-size: 12px; }
+.hint-label { -fx-text-fill: #646c7a; -fx-font-size: 11px; }
